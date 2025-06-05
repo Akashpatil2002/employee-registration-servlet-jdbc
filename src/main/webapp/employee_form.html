@@ -1,88 +1,90 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Employee Registration</title>
-<style>
-body {
-	font-family: Arial, sans-serif;
-	background: #f3f3f3;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
+	<title>Employee Registration</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background: #f3f3f3;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+		}
 
-.container {
-	background: white;
-	padding: 30px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px #ccc;
-	width: 600px;
-}
+		.container {
+			background: white;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px #ccc;
+			width: 600px;
+		}
 
-.container h2 {
-	text-align: center;
-	margin-bottom: 25px;
-}
+		.container h2 {
+			text-align: center;
+			margin-bottom: 25px;
+		}
 
-.form-group {
-	margin-bottom: 15px;
-	display: flex;
-	flex-direction: column;
-}
+		.form-group {
+			margin-bottom: 15px;
+			display: flex;
+			flex-direction: column;
+		}
 
-label {
-	margin-bottom: 5px;
-	font-weight: bold;
-}
+		label {
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
 
-input, select, textarea {
-	padding: 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-}
+		input,
+		select,
+		textarea {
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
 
-textarea {
-	resize: vertical;
-}
+		textarea {
+			resize: vertical;
+		}
 
-.form-group-inline {
-	display: flex;
-	gap: 10px;
-}
+		.form-group-inline {
+			display: flex;
+			gap: 10px;
+		}
 
-.form-group-inline .form-group {
-	flex: 1;
-}
+		.form-group-inline .form-group {
+			flex: 1;
+		}
 
-button {
-	width: 100%;
-	padding: 12px;
-	background: #28a745;
-	color: white;
-	border: none;
-	border-radius: 7px;
-	font-size: 16px;
-	cursor: pointer;
-}
+		button {
+			width: 100%;
+			padding: 12px;
+			background: #28a745;
+			color: white;
+			border: none;
+			border-radius: 7px;
+			font-size: 16px;
+			cursor: pointer;
+		}
 
-button:hover {
-	background: #218838;
-}
-</style>
+		button:hover {
+			background: #218838;
+		}
+	</style>
 </head>
+
 <body>
 	<div class="container">
 		<h2>Employee Registration Form</h2>
 		<form action="formSubmit" method="post">
 			<div class="form-group-inline">
 				<div class="form-group">
-					<label>First Name</label> <input type="text" name="first_name"
-						required>
+					<label>First Name</label> <input type="text" name="first_name" required>
 				</div>
 				<div class="form-group">
-					<label>Last Name</label> <input type="text" name="last_name"
-						required>
+					<label>Last Name</label> <input type="text" name="last_name" required>
 				</div>
 			</div>
 
@@ -126,8 +128,7 @@ button:hover {
 			</div>
 
 			<div class="form-group">
-				<label>Department</label> <input type="text" name="department"
-					required>
+				<label>Department</label> <input type="text" name="department" required>
 			</div>
 
 			<div class="form-group">
@@ -139,12 +140,12 @@ button:hover {
 			</div>
 
 			<div class="form-group">
-				<label>Join Date</label> <input type="date" name="joining_date"
-					required>
+				<label>Join Date</label> <input type="date" name="joining_date" required>
 			</div>
 
 			<button type="submit">Register</button>
 		</form>
 	</div>
 </body>
+
 </html>
